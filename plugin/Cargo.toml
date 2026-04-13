@@ -1,0 +1,15 @@
+[package]
+name = "polars_permutation"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "polars_permutation"
+crate-type = ["cdylib"]
+
+[dependencies]
+feistel-permutation-rs = { path = ".." }
+pyo3 = { version = "0.26", features = ["extension-module", "abi3-py39"] }
+pyo3-polars = { version = "0.25", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+polars = { version = "0.52.0", default-features = false }

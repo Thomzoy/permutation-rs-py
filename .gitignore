@@ -1,2 +1,13 @@
 /target
+/plugin/target
 /Cargo.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.so
+*.dylib
+*.pyd
+.venv/
