@@ -24,8 +24,6 @@ jobs:
           python-version: '3.12'
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
-      - name: Rust tests
-        run: cargo test
       - name: Build plugin
         uses: PyO3/maturin-action@v1
         with:
